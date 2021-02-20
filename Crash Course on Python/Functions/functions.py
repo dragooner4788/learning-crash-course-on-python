@@ -142,3 +142,45 @@ def get_username_length():
 length_of_username = get_username_length()
 
 print(length_of_username)
+
+# Principals of Code reuse
+
+'''
+This section talks about reducing code duplication and DRY priniciples...
+'''
+
+name = input("What is your name?")
+print(f"Hello {name} your lucky number is {len(name)*9}")
+
+# We can make this better...
+
+def lucky_number(name):
+    number = len(name) * 9
+    print(f"Hello {name}. Your lucky number is {number}.")
+
+lucky_number("Guy")
+
+# Code Style
+
+''' 
+Good style helps users be able to read your code. 
+
+Good style makes life easier for people who have to maintain the code
+
+Reduces errors
+
+Code Style doesn;t matter to the computer, this is just for readers of your code
+
+Principles:
+1. You want your code to be as self-documenting as possible. 
+
+Self-Documenting Code: Written in a way that's readable and doesn't conceal its intent. 
+
+- Clear varibales and functions
+
+Refactoring: The practice of cleaning up code to make it more clean and readable and useful.
+
+When you cannot make variables and code clear, make sure you use comments to comment what the code is doing. 
+
+Try to use a style guide when you are writing code.
+'''
